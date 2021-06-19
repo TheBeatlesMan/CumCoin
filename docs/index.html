@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CumCoin</title>
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" href="logo.svg" />
+    </head>
+    <body>
+        <button
+            onclick="window.scroll({ top: 0, left: 0, behavior: 'smooth' })"
+            id="scroll_top"
+            title="^"
+        >
+            Top
+        </button>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <div id="_main" class="navbar_logo navbar_item">
+                    <img id="navbar_img" src="logo.svg" />
+                    <a id="navbar_logo">CumCoin</a>
+                </div>
+                <!---Add logo-->
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li id="_s_1" class="navbar_item">
+                        <a class="navbar_links">What is Cumcoin?</a>
+                    </li>
+                    <li id="_s_2" class="navbar_item">
+                        <a class="navbar_links">Tokenomics</a>
+                    </li>
+                    <li id="_s_3" class="navbar_item">
+                        <a class="navbar_links">Join The Movement</a>
+                    </li>
+                </ul>
+                <button
+                    id="github_button"
+                    onclick="window.open('https://github.com/TheBeatlesMan/CumCoin', '_blank')"
+                >
+                    Github
+                </button>
+            </div>
+        </nav>
+
+        <!---Title-->
+        <div id="main" class="main">
+            <div id="particles-js" class="particle_content back"></div>
+            <div class="main_container flex_container">
+                <div class="main_content main_text flex_child front">
+                    <h1>THE ULTIMATE MEMECOIN</h1>
+                    <p>
+                        An easy to use, relatable, painfree coin for the ages.
+                        Join the revolution today.
+                    </p>
+                </div>
+                <div class="main_content main_img flex_child front">
+                    <img
+                        class="main_img"
+                        src="logo.svg"
+                        alt="epic picture"
+                        id="main_img"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!---what is it---->
+        <div id="s_1" class="section section_1 front">
+            <h1>What is CumCoin?</h1>
+            <h2>It's in the name</h2>
+            <p>
+                The internet is filled with thousands of cryptocurrencies. The
+                market is dominated by coins that are either way too expensive
+                or insanely cheap, and most coins are simply short lived fads.
+                CumCoin is none of this.
+            </p>
+            <p>
+                Lots of new coins promise to be the foundation of a new, better
+                coin. CumCoin, on the other hand, IS the new, better coin.
+                Designed with stability and longevity in mind, CumCoin will not
+                be releasing a sequel, but it will continue to improve.
+            </p>
+            <h2>CumCoin is not another useless fad</h2>
+            <p>
+                CumCoin is here to stay. No fancy new revolutionary technologies
+                are promised here. No raising funds for yet another crypto
+                exchange. That's what makes CumCoin so good - there is no
+                confusing underlying complexity.
+            </p>
+            <p>
+                CumCoin is a friendly token that's easy to use, compatible with
+                all ERC-20 wallets - you can use existing wallets like MetaMask
+                without needing yet another wallet to worry about. Transactions
+                with CumCoin are designed to be super cheap, and using the tried
+                and true Ethereum blockchain, it's stupid easy to send CUM to
+                anyone.
+            </p>
+            <h2>
+                <a
+                    href="https://etherscan.io/token/0xfD408f6F705d19A0642df5B56f5ee796f47d63D4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View the CumCoin contract on Etherscan</a
+                >
+            </h2>
+        </div>
+
+        <!---the mission---->
+        <div id="s_2" class="section section_2 front">
+            <h1>Tokenomics</h1>
+            <h2>Supply</h2>
+            <p>
+                The total supply of CUM is capped at 690,420,000. This is the
+                maximum amount of CumCoins that will exist.
+            </p>
+            <h2>Distribution</h2>
+            <p>
+                A pool of 50,000,000 CUM is allocated for the creators and
+                initial funders of the coin. An additional 200,000,000 CUM will
+                be distributed through a decentralized crowdsale. The remaining
+                coins will be distributed through UniSwap. UniSwap liquidity
+                will be determined by Ethereum raised in the crowdsale.
+            </p>
+            <h2>Upgradeability</h2>
+            <p>
+                Using OpenZeppelin upgradeable ERC20 contracts, CumCoin can be
+                upgraded in the case an exploit is found or the community has
+                agreed on some changes. None of these upgrades will be decided
+                on and added to the blockchain until a big majority of the
+                community has agreed on them, and all proposed changes will be
+                published to the official Github repository first.
+            </p>
+        </div>
+
+        <!---button thing---->
+        <div id="s_3" class="section section_1 front">
+            <h1>Join The Movement</h1>
+            <h2></h2>
+            <div>
+                <p>
+                    Before contributing, read this. While we all believe in
+                    CumCoin and want it to be successful, you need to be aware
+                    of the risks involved before making any contributions.
+                    That's why we want to make this clear: don't contribute more
+                    than you're prepared to lose. When you contribute to
+                    CumCoin, you're not buying CUM from anyone. Instead you're
+                    interacting with a decentralized contract on the Ethereum
+                    blockchain. By calling the contract's buyTokens function,
+                    you are set a balance internally in the contract, which you
+                    can check at any time using the balanceOf function. Note,
+                    you will not receive any tokens at this point. Once the
+                    crowdsale is over, you'll be able to call the withdrawTokens
+                    function. Calling this function will initiate a transfer of
+                    CUM from the crowdsale contract to the given address. Your
+                    entire balance will be transferred to the given address,
+                    after which your balance in the crowdsale will be reset to
+                    0, preventing further withdrawals. By contributing to
+                    CumCoin, you understand that all contributions are final,
+                    and there cannot be any refunds or cancellations. You are
+                    also aware that there is no business behind CumCoin - you
+                    are simply interacting with a decentralized contract on the
+                    Ethereum blockchain. You understand that all decisions you
+                    make regarding CumCoin are your own, and you will bear their
+                    consequences. Again, don't contribute more than you're
+                    prepared to lose. (Click the 'I agree' button to continue if
+                    you agree to the above terms)
+                </p>
+                <button class="agreeButton second_button">I agree</button>
+            </div>
+            <div class="spacer"></div>
+            <h2>Account: <span class="showAccount"></span></h2>
+            <div>
+                <button class="enableEthereumButton main_button">
+                    Connect MetaMask
+                </button>
+                <button class="addCoin main_button">Add CUM to MetaMask</button>
+            </div>
+            <div class="small_spacer"></div>
+            <div>
+                <label for="getCoin"
+                    >ETHER to send (you get
+                    <span class="youGet"></span> CUM)</label
+                >
+                <input type="number" id="getCoin" />
+                <button class="getCoinButton main_button">Send</button>
+            </div>
+            <div class="small_spacer"></div>
+            <div>
+                <label
+                    >Your crowdsale balance:
+                    <span class="crowdsaleBalance"></span
+                ></label>
+                <button class="updateBalanceButton main_button">Refresh</button>
+            </div>
+            <div class="small_spacer"></div>
+            <div>
+                <label>Withdraw funds</label>
+                <button class="withdrawButton main_button">Withdraw</button>
+            </div>
+            <div class="small_spacer"></div>
+            <div>
+                <label>Ether raised: <span class="etherRaised"></span></label>
+            </div>
+            <div class="spacer"></div>
+            <h2>
+                <a
+                    href="https://etherscan.io/address/0x909ff1b6b79feb3e21c732e32aebf880fe794f42"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View the crowdsale contract on Etherscan</a
+                >
+            </h2>
+            <p>
+                You will need a MetaMask wallet to interact with the crowdsale
+                through this website. The crowdsale will provide 250,000 CUM for
+                every 1 ETH sent. This can only be withdrawn once the finalize
+                function is called, and the finalize function is restricted to
+                the contract deployer. The crowdsale will not accept more than a
+                total of 800 ETH, after which further contributions will be
+                rejected. Raised Ethereum will be used for UniSwap liquidity.
+            </p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+    <footer></footer>
+</html>
