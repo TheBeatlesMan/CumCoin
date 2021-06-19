@@ -1,0 +1,131 @@
+@import 'navbar.css';
+@import 'footer.css';
+@import 'button.css';
+@import 'flex.css';
+@import 'section.css';
+@import 'section_1.css';
+@import 'section_2.css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    /* Wouldn't recommend reading this as you will get an aneurism not my fault btw*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.main {
+    background-color: lightsteelblue;
+    margin: auto;
+}
+
+.main_container {
+    background-color: lightsteelblue;
+    z-index: 1;
+    width: 100%;
+    padding-left: 20vw;
+}
+
+.main_text {
+    max-width: 30vw;
+}
+
+.main_img {
+    max-width: 60%;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.main_content p {
+    flex: auto;
+    padding-top: 2em;
+    margin: 0;
+    font-size: min(2vw, 4em);
+    font-weight: 700;
+    color: rgb(99, 97, 97);
+}
+
+.main_content h1 {
+    font-size: min(4vw, 8em);
+    background-color: aqua;
+    background-image: linear-gradient(to top, blueviolet 0%, deepskyblue 80%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.main_content h2 {
+    font-size: 4em;
+    background-color: aqua;
+    background-image: linear-gradient(to top, darkgrey 0%, deepskyblue 80%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.particle_content {
+    width: 100%;
+    margin: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .main_container {
+        flex-direction: column;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        width: 100%;
+    }
+
+    .main_text {
+        max-width: none;
+    }
+
+    .main_img {
+        max-width: 50vw;
+        height: auto;
+        margin: 0;
+        text-align: center;
+        padding-left: 10vw;
+    }
+
+    .main_content p {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .main_content h1 {
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .main_content h2 {
+        text-align: center;
+    }
+
+    .particle_content {
+        height: 200%;
+    }
+}
+
+.front {
+    z-index: 6;
+    position: relative;
+    opacity: 1;
+}
+
+.back {
+    z-index: 1;
+    position: absolute;
+}
