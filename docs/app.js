@@ -99,7 +99,7 @@ addButton.addEventListener('click', async function () {
                 address: '0xfD408f6F705d19A0642df5B56f5ee796f47d63D4',
                 symbol: 'CUM',
                 decimals: 18,
-                // image: 'https://url.com'
+                image: 'https://raw.githubusercontent.com/TheBeatlesMan/CumCoin/main/cumcoin_256x256.png',
             },
         },
     });
